@@ -1,0 +1,7 @@
+PasswordAuthentication no
+PermitEmptyPasswords no
+PubkeyAuthentication yes
+PermitRootLogin yes
+
+SyslogFacility AUTH
+LogLevel INFO

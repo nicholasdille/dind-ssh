@@ -1,0 +1,68 @@
+{
+    "ConfigVersion": 3,
+    "Driver": {
+        "IPAddress": "@IP@",
+        "MachineName": "@NAME@",
+        "SSHUser": "root",
+        "SSHPort": 22,
+        "SSHKeyPath": "@DOCKER_CONFIG@/machine/machines/@NAME@/@SSH_KEY@",
+        "StorePath": "@DOCKER_CONFIG@/machine",
+        "SwarmMaster": false,
+        "SwarmHost": "",
+        "SwarmDiscovery": "",
+        "EnginePort": 2376,
+        "SSHKey": "@HOME@/.ssh/@SSH_KEY@"
+    },
+    "DriverName": "generic",
+    "HostOptions": {
+        "Driver": "",
+        "Memory": 0,
+        "Disk": 0,
+        "EngineOptions": {
+            "ArbitraryFlags": [],
+            "Dns": null,
+            "GraphDir": "",
+            "Env": [],
+            "Ipv6": false,
+            "InsecureRegistry": [],
+            "Labels": [],
+            "LogLevel": "",
+            "StorageDriver": "",
+            "SelinuxEnabled": false,
+            "TlsVerify": true,
+            "RegistryMirror": [],
+            "InstallURL": "https://get.docker.com"
+        },
+        "SwarmOptions": {
+            "IsSwarm": false,
+            "Address": "",
+            "Discovery": "",
+            "Agent": false,
+            "Master": false,
+            "Host": "tcp://0.0.0.0:3376",
+            "Image": "swarm:latest",
+            "Strategy": "spread",
+            "Heartbeat": 0,
+            "Overcommit": 0,
+            "ArbitraryFlags": [],
+            "ArbitraryJoinFlags": [],
+            "Env": null,
+            "IsExperimental": false
+        },
+        "AuthOptions": {
+            "CertDir": "@DOCKER_CONFIG@/machine/certs",
+            "CaCertPath": "@DOCKER_CONFIG@/machine/machines/@NAME@/ca.pem",
+            "CaPrivateKeyPath": "@DOCKER_CONFIG@/machine/certs/ca-key.pem",
+            "CaCertRemotePath": "",
+            "ServerCertPath": "@DOCKER_CONFIG@/machine/machines/@NAME@/server.pem",
+            "ServerKeyPath": "@DOCKER_CONFIG@/machine/machines/@NAME@/server-key.pem",
+            "ClientKeyPath": "@DOCKER_CONFIG@/machine/machines/@NAME@/key.pem",
+            "ServerCertRemotePath": "",
+            "ServerKeyRemotePath": "",
+            "ClientCertPath": "@DOCKER_CONFIG@/machine/machines/@NAME@/cert.pem",
+            "ServerCertSANs": [],
+            "StorePath": "@DOCKER_CONFIG@/machine/machines/@NAME@"
+        }
+    },
+    "Name": "@NAME@"
+}
